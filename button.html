@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sugeun</title>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <form name="forms">
+            <input class='number' type="text" name="output" readonly>
+        </form>
+    </div>
+    <div class="number_bar">
+        <form>
+            <input type="button" class='button' value="1" onclick="document.forms.output.value+='1'">
+            <input type="button" class='button' value="2" onclick="document.forms.output.value+='2'">
+            <input type="button" class='button' value="3" onclick="document.forms.output.value+='3'">
+
+        </form> 
+    </div>
+    <div class="number_bar">
+        <form>
+            <input type="button" class='button' value="4" onclick="document.forms.output.value+='4'">
+            <input type="button" class='button' value="5" onclick="document.forms.output.value+='5'">
+            <input type="button" class='button' value="6" onclick="document.forms.output.value+='6'">
+
+        </form> 
+    </div>    
+    <div class="number_bar">
+        <form>
+            <input type="button" class='button' value="7" onclick="document.forms.output.value+='7'">
+            <input type="button" class='button' value="8" onclick="document.forms.output.value+='8'">
+            <input type="button" class='button' value="9" onclick="document.forms.output.value+='9'">
+
+        </form> 
+    </div>
+    <div class="number_bar">
+        <form>
+            <input type="button" class='button' value="⬅" onclick="document.forms.output.value=' '">
+        </form> 
+    </div>
+    <script>
+        function crayBtn1()
+        {
+            $('#dialog-message').dialog({
+                modal: true, 
+                buttons: {
+                    "PHP": function() { $(this).dialog('close'); },
+                    "ASP": function() { $(this).dialog('close'); },
+                    "JSP": function() { $(this).dialog('close'); }
+                }
+            });
+        }
+        </script>
+    <div id="dialog-message" title="선택하세요." style='display:none'>
+        다음중 가장 많이 쓰는 웹언어는?<br/>
+          PHP, ASP, JSP
+      </div>
+      <button class="ui-button ui-widget ui-corner-all" onclick="crayBtn1()">창 띄우기</button>             
+            
+        
+</body>
+</html>
