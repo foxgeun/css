@@ -1,0 +1,56 @@
+    <!DOCTYPE HTML>
+    <html>
+    <title>Arduino for aoaoao</title>
+    <head>
+    <style>
+        
+    h1{
+        color:#17A1A5; 
+        font-size:48px;
+    }
+    .box{
+        display: block;
+            align-items: center;
+        justify-content: center;
+        border:solid 5px #4db7bb; 
+        width:25%; 
+        height: 300px;
+    }
+    input{
+        display: block;
+            align-items: center;
+        justify-content: center;
+        width:40%; height: 100px; font-size:40px; 
+        color:#fff; 
+        border:none; 
+        background: #17A1A5;
+    }
+    .onBtn{
+        margin:40px 0 20px 0;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <br><br><br><br><br>
+    <h1>escape9</h1>
+    <br><br>
+    <div class="box">
+        <form action='/led' method='GET'>
+            <button type="button" class="navyBtn" onClick="location.href='http://192.168.0.98/'">
+            <input class='onBtn' type='submit' value='on'/>
+            </form>
+            <form action='/led' method='GET'>
+            <button type="button" class="navyBtn" onClick="location.href='http://127.0.0.1:5500/main.html'">
+            <input class='offBtn' type='submit' value='off'/>
+            </form>
+              
+    
+          
+    
+    </div>
+    
+    <br />
+    </body>
+    </html>
+  
