@@ -4,28 +4,50 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: aqua;
 }
 
-.number{
 
+.warp{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    color: white;
     text-align: center;
-    display: flex;
-    height: 80px;
-    width: 250px;
-    border: none;
-    background-color: white;
-    font-size: 50px;
-    justify-items: center;
+}
+
+.material-symbols-outlined{
+    font-size: 10rem;
+}
+
+.lg-text{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sm-text{
+    font-size: 30px;
+}
+
+#dynamic{
+    position: relative;
+    display: inline-block
 
 }
-.button{
-    background-color: yellow;
-    border-radius: 40px;
-    width: 80px;
-    height: 80px;
-    font-size: 50px;
+
+#dynamic::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: white;
 }
-.button:hover{
-    box-shadow: 1px 1px 2px white;
+
+#dynamic.active::after{
+    display:none;
 }
