@@ -4,7 +4,10 @@
     box-sizing: border-box;
     
 }
-
+body{
+    background: url("room.jpg") no-repeat center;
+    background-size: cover;
+}
 form{
     width: 600px;
     margin: 200px auto;
