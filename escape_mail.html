@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>메일함</title>
+    <style>
+        body {
+            background-color: #333;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1 {
+          margin-top: 0;
+          padding: 20px;
+          background-color: #000;
+          color: #F8F8F8;
+          font-weight: 300;
+          text-align: center;
+          text-shadow: 2px 2px #555;
+        }
+        ul {
+            
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+        li {
+          
+          margin: 20px;
+        }
+        a {
+          display: block;
+          width: 200px;
+          height: 100px;
+          line-height: 200px;
+          
+          background-color: #FFF;
+          color: #333;
+          font-size: 1.5em;
+          text-shadow: 1px 1px #F8F8F8;
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          transition: all 0.2s ease-in-out;
+        }
+        a:hover {
+          background-color: #F8F8F8;
+          color: #333;
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+          transform: translateY(-5px);
+        }
+        #inbox,#sent,#draft,#spam,#trash {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color:grey
+        }
+        .fa {
+          font-size: 3em;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <h1>메일함</h1>
+    <ul>
+      <li>
+        <a id="inbox" href="#">
+          <i class="fa fa-inbox"></i>
+          <span>받은 편지함</span>
+        </a>
+      </li>
+      <li>
+        <a id="sent" href="#">
+          <i class="fa fa-paper-plane"></i>
+          <span>보낸 편지함</span>
+        </a>
+      </li>
+      <li>
+        <a id="draft" href="#">
+          <i class="fa fa-pencil"></i>
+          <span>임시 보관함</span>
+        </a>
+      </li>
+      <li>
+        <a id="spam" href="#">
+          <i class="fa fa-ban"></i>
+          <span>스팸 메일함</span>
+        </a>
+      </li>
+      <li>
+        <a id="trash" href="#">
+          <i class="fa fa-trash"></i>
+          <span>휴지통</span>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
