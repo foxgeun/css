@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/dceadd6cbb.js" crossorigin="anonymous"></script>
     <title>Museum - Home</title>
     <style>
       body {
@@ -66,13 +67,64 @@
         text-decoration: none;
         color: #ffd700;
       }
+      p{
+        font-size: 20px;
+            
+      }
+              .on_now_tag{
+            font-size: 14px;
+            color: #fd183a;
+            padding: 2px 10px;
+            margin-left: -20px;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        .on_now_tag:after {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: #fd183a;
+            border-radius: 50%;
+            margin-left: 3px;
+            -webkit-animation:blink 0.5s ease-in-out infinite alternate;
+            -moz-animation:blink 0.5s ease-in-out infinite alternate;
+            animation:blink 0.5s ease-in-out infinite alternate;
+        }
+        -webkit-keyframes blink{
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+        @-moz-keyframes blink{
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+        @keyframes blink{
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+      .bar{
+        display: flex;
+        justify-content: end;
+        font-size: 20px;
+      }
+      #mail{
+        margin-left: 15px;
+        margin-top: 12px;
+        text-decoration: none;
+        color: white;
+      }
       
     </style>
   </head>
   <body>
     
     <header>
-      <a href="http://127.0.0.1:5500/escape9_login.html" class="admin">관리자 로그인</a>
+      <div class="bar">
+        <p>안녕하세요 박수근님</p>
+        <a href="http://127.0.0.1:5500/escape9_mail_final.html" id="mail" class="far fa-envelope fa-2x"></a>
+      <span class="on_now_tag" ></span>
+    </div>
       <h1>Escape Museum</h1>
     </header>
     <nav>
