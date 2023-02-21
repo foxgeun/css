@@ -71,6 +71,44 @@
 		font-weight: bold;
 		
 	}
+	 ul {
+            
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+        li {
+          
+          margin: 20px;
+        }
+        a {
+          display: block;
+          width: 200px;
+          height: 100px;
+          line-height: 200px;
+          
+          background-color: #FFF;
+          color: #333;
+          font-size: 1.5em;
+          text-shadow: 1px 1px #F8F8F8;
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          transition: all 0.2s ease-in-out;
+        }
+        a:hover {
+          background-color: #F8F8F8;
+          color: #333;
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+          transform: translateY(-5px);
+        }
+        #inbox,#sent,#draft,#spam,#trash {
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color:grey
+        }
 	</style>
 </head>
 <body>
